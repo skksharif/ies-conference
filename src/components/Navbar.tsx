@@ -36,8 +36,8 @@ const Navbar = () => {
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
-          <div className="flex items-center">
-            <span className="text-2xl font-bold text-white">IES 2026</span>
+          <div className="bg-white rounded-lg p-2 flex items-center">
+            <img src='/logo.png' className="w-20 text-white"/>
           </div>
 
           <div className="hidden lg:flex items-center space-x-8">

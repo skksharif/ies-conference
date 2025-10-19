@@ -6,6 +6,7 @@ const Organizers = () => {
     location: 'Kurume, Fukuoka',
     country: 'JAPAN',
     flag: '🇯🇵',
+    logo: '/k.png',
     type: 'main'
   };
 
@@ -14,31 +15,36 @@ const Organizers = () => {
       name: 'Vishnu Japan Outreach Centre (VJOC)',
       location: 'Japan',
       country: 'JAPAN',
-      flag: '🇯🇵'
+      flag: '🇯🇵',
+      logo: '/vjoc.png'
     },
     {
       name: 'Sri Vishnu Educational Society',
       location: 'Hyderabad',
       country: 'INDIA',
-      flag: '🇮🇳'
+      flag: '🇮🇳',
+      logo: '/vishnu.png'
     },
     {
       name: 'University BDT College of Engineering',
       location: 'Davanagere',
       country: 'INDIA',
-      flag: '🇮🇳'
+      flag: '🇮🇳',
+      logo: '/vtu.png'
     },
     {
       name: "Alva's Institute of Engineering & Technology",
       location: 'Moodbidri',
       country: 'INDIA',
-      flag: '🇮🇳'
+      flag: '🇮🇳',
+      logo: '/alva.png'
     }
   ];
 
   return (
     <section id="organizers" className="py-20 bg-gradient-to-br from-[#091F4E] to-[#0d2a5e]">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Title */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Organizers
@@ -46,39 +52,47 @@ const Organizers = () => {
           <div className="w-24 h-1 bg-gradient-to-r from-[#E56B46] to-[#A23E3A] mx-auto mb-8"></div>
         </div>
 
+        {/* Main Organizer */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-[#E56B46] text-center mb-8">Main Organizer</h3>
           <div className="max-w-2xl mx-auto">
             <div className="bg-white rounded-2xl shadow-2xl p-8 transform hover:scale-105 transition-all duration-300">
-              <div className="flex items-center justify-center mb-4">
-                <Building2 className="w-12 h-12 text-[#091F4E]" />
-              </div>
-              <h4 className="text-2xl font-bold text-[#091F4E] text-center mb-4">
-                {mainOrganizer.name}
-              </h4>
-              <div className="flex items-center justify-center gap-2 text-gray-600">
-                <MapPin className="w-5 h-5" />
-                <span className="text-lg">
-                  {mainOrganizer.location}, {mainOrganizer.country} {mainOrganizer.flag}
-                </span>
+              <div className="flex flex-col items-center justify-center mb-4">
+                <img
+                  src={mainOrganizer.logo}
+                  alt={mainOrganizer.name}
+                  className="h-20 w-auto mb-4 animate-float object-contain"
+                />
+                <h4 className="text-2xl font-bold text-[#091F4E] text-center mb-4">
+                  {mainOrganizer.name}
+                </h4>
+                <div className="flex items-center justify-center gap-2 text-gray-600">
+                  <MapPin className="w-5 h-5" />
+                  <span className="text-lg">
+                    {mainOrganizer.location}, {mainOrganizer.country} {mainOrganizer.flag}
+                  </span>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
+        {/* Partner Section */}
         <div>
-          <h3 className="text-2xl font-bold text-[#E56B46] text-center mb-8">In Association With</h3>
+          <h3 className="text-2xl font-bold text-[#E56B46] text-center mb-8">
+            In Association With
+          </h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {partners.map((partner, index) => (
               <div
                 key={index}
-                className="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 hover:shadow-2xl transition-all duration-300"
+                className="bg-white rounded-xl shadow-lg p-6 transform hover:scale-105 hover:shadow-2xl transition-all duration-300 flex flex-col items-center"
               >
-                <div className="flex items-center justify-center mb-4">
-                  <div className="w-16 h-16 bg-gradient-to-br from-[#091F4E] to-[#A23E3A] rounded-full flex items-center justify-center">
-                    <Building2 className="w-8 h-8 text-white" />
-                  </div>
-                </div>
+                <img
+                  src={partner.logo}
+                  alt={partner.name}
+                  className="h-16 w-auto mb-4 animate-float object-contain"
+                />
                 <h4 className="text-lg font-bold text-[#091F4E] text-center mb-3 min-h-[3rem]">
                   {partner.name}
                 </h4>
