@@ -13,9 +13,9 @@ const Organizers = () => {
   const partners = [
     {
       name: 'Vishnu Japan Outreach Centre (VJOC)',
-      location: 'Japan',
-      country: 'JAPAN',
-      flag: '🇯🇵',
+      location: 'Hyderabad',
+      country: 'India',
+      flag: '🇮🇳',
       logo: '/vjoc.png'
     },
     {

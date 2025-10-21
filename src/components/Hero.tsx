@@ -1,4 +1,4 @@
-import { ChevronDown, FileText, Pencil } from "lucide-react";
+import { Calendar, ChevronDown, FileText, Pencil, Scroll } from "lucide-react";
 import { useEffect, useState } from "react";
 
 const Hero = () => {
@@ -56,16 +56,16 @@ const Hero = () => {
           {[
             "/k.png",
             "/vjoc.png",
+            "/vishnu.png",
             "/vtu.png",
             "/alva.png",
             "/logo.png",
-            "/vishnu.png",
             "/k.png",
             "/vjoc.png",
+            "/vishnu.png",
             "/vtu.png",
             "/alva.png",
-             "/logo.png",
-             "/vishnu.png"
+            "/logo.png",
           ].map((imgSrc, idx) => (
             <img
               key={idx}
@@ -79,7 +79,7 @@ const Hero = () => {
 
       {/* Main Content */}
       <div className="relative z-10 text-center px-4 max-w-6xl mx-auto mt-5 animate-fadeIn">
-        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight animate-slideUp">
+        <h1 className="text-xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4 leading-tight animate-slideUp">
           10th International Engineering Symposium
         </h1>
 
@@ -110,26 +110,37 @@ const Hero = () => {
           className="flex flex-col sm:flex-row gap-4 justify-center animate-slideUp"
           style={{ animationDelay: "0.8s" }}
         >
-          <button
-            onClick={scrollToCallForPapers}
-            className="flex items-center justify-center gap-2 px-8 py-4 bg-[#E56B46] text-white rounded-lg font-semibold text-base sm:text-lg hover:bg-[#A23E3A] transition-all duration-300 transform hover:scale-105 shadow-lg"
+          <a
+            href="/ies-2026-template.doc"
+            download
+            className="flex items-center justify-center gap-2 px-4 py-2 bg-[#E56B46] text-white rounded-lg  text-base sm:text-lg hover:bg-[#A23E3A] transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
-            <FileText className="w-5 h-5" />
-            Call for Papers
-          </button>
+            <FileText className="w-4 h-4 sm:w-5 sm:h-5" />
+            Paper Template
+          </a>
           <button
             onClick={scrollToRegistration}
-            className="flex items-center justify-center gap-2 px-8 py-4 bg-white text-[#091F4E] rounded-lg font-semibold text-base sm:text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+            className="flex items-center justify-center gap-2 px-4 py-2 bg-white text-[#091F4E] rounded-lg  text-base sm:text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
             <Pencil className="w-5 h-5" />
             Register Now
           </button>
+          <button
+            onClick={scrollToCallForPapers}
+            className="flex items-center justify-center gap-2 px-2 py-2 bg-[#E56B46] text-white rounded-lg  text-base sm:text-lg hover:bg-[#A23E3A] transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
+            <Calendar className="w-5 h-5" />
+            Call for Papers
+          </button>
+          <a
+            href="/broucher.pdf"
+            download
+            className="flex items-center justify-center gap-2 px-4 py-2 bg-white text-[#091F4E] rounded-lg  text-base sm:text-lg hover:bg-gray-100 transition-all duration-300 transform hover:scale-105 shadow-lg"
+          >
+            <Scroll className="w-5 h-5" />
+            Broucher
+          </a>
         </div>
-      </div>
-
-      {/* Scroll Icon */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <ChevronDown className="text-white w-8 h-8" />
       </div>
     </section>
   );

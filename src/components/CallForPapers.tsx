@@ -79,10 +79,10 @@ const CallForPapers = () => {
               </p>
               <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 space-y-2">
                 <div className="font-semibold">Email to:</div>
-                <a href="mailto:torii@kurume-it.ac.jp" className="block hover:underline">
-                  📧 torii@kurume-it.ac.jp
+                <a href="mailto:raju.aedla@vedic.edu.in" className="block hover:underline">
+                  raju.aedla@vedic.edu.in
                 </a>
-                <div className="text-sm opacity-90">CC: katta@nitk.edu.in</div>
+                
               </div>
               <p className="mt-4 text-sm opacity-90">
                 All papers will be peer-reviewed and published in the Symposium Proceedings.
