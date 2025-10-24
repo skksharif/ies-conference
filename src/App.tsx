@@ -9,6 +9,8 @@ import Registration from './components/Registration';
 import AboutKIT from './components/AboutKIT';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Gallery from './components/Gallery';
+import IESProceedings from './components/IESProceedings';
 
 function App() {
   return (
@@ -19,7 +21,11 @@ function App() {
         <About />
         <Organizers />
         <CallForPapers />
+        <IESProceedings/>
         <Schedule />
+ 
+        <Gallery/>
+
         <Travel />
         <Registration />
         <AboutKIT />

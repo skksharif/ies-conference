@@ -1,4 +1,4 @@
-import { Mail, Globe, MapPin } from 'lucide-react';
+import { Mail, Globe, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -10,39 +10,70 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-bold mb-4 text-[#E56B46]">IES 2026</h3>
             <p className="text-gray-300 leading-relaxed">
-              10th International Engineering Symposium bringing together researchers and innovators from around the world.
+              10th International Engineering Symposium bringing together
+              researchers and innovators from around the world.
             </p>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-[#E56B46]">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4 text-[#E56B46]">
+              Quick Links
+            </h4>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-gray-300 hover:text-white transition-colors">About IES</a>
+                <a
+                  href="#about"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  About IES
+                </a>
               </li>
               <li>
-                <a href="#call-for-papers" className="text-gray-300 hover:text-white transition-colors">Call for Papers</a>
+                <a
+                  href="#call-for-papers"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Call for Papers
+                </a>
               </li>
               <li>
-                <a href="#schedule" className="text-gray-300 hover:text-white transition-colors">Schedule</a>
+                <a
+                  href="#schedule"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Schedule
+                </a>
               </li>
               <li>
-                <a href="#registration" className="text-gray-300 hover:text-white transition-colors">Registration</a>
+                <a
+                  href="#registration"
+                  className="text-gray-300 hover:text-white transition-colors"
+                >
+                  Registration
+                </a>
               </li>
             </ul>
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-[#E56B46]">Contact</h4>
+            <h4 className="text-lg font-semibold mb-4 text-[#E56B46]">
+              Contact
+            </h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <Mail className="w-5 h-5 flex-shrink-0 mt-1 text-[#E56B46]" />
                 <div>
-                  <a href="mailto:torii@kurume-it.ac.jp" className="text-gray-300 hover:text-white transition-colors text-sm">
+                  <a
+                    href="mailto:torii@kurume-it.ac.jp"
+                    className="text-gray-300 hover:text-white transition-colors text-sm"
+                  >
                     torii@kurume-it.ac.jp
                   </a>
                   <br />
-                  <a href="mailto:katta@nitk.edu.in" className="text-gray-300 hover:text-white transition-colors text-sm">
+                  <a
+                    href="mailto:katta@nitk.edu.in"
+                    className="text-gray-300 hover:text-white transition-colors text-sm"
+                  >
                     katta@nitk.edu.in
                   </a>
                 </div>
@@ -50,7 +81,8 @@ const Footer = () => {
               <li className="flex items-start gap-2">
                 <MapPin className="w-5 h-5 flex-shrink-0 mt-1 text-[#E56B46]" />
                 <span className="text-gray-300 text-sm">
-                  Kurume Institute of Technology<br />
+                  Kurume Institute of Technology
+                  <br />
                   Kurume, Fukuoka, Japan
                 </span>
               </li>
@@ -58,28 +90,52 @@ const Footer = () => {
           </div>
 
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-[#E56B46]">Partners</h4>
+            <h4 className="text-lg font-semibold mb-4 text-[#E56B46]">
+              Partners
+            </h4>
             <ul className="space-y-2">
               <li>
                 <a
-                  href="https://www.kurume-it.ac.jp/english/"
+                  href="https://www.saga-u.ac.jp/en/news/20250930555/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-sm"
                 >
                   <Globe className="w-4 h-4" />
-                  Kurume Institute of Technology
+                  Vishnu Japan Outreach Centre (VJOC)
                 </a>
               </li>
               <li>
                 <a
-                  href="https://welcome-kurume.com/en/"
+                  href="https://www.srivishnu.edu.in/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-sm"
                 >
                   <Globe className="w-4 h-4" />
-                  Visit Kurume City
+                  Sri Vishnu Educational Society (SVES)
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.ubdtce.org/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-sm"
+                >
+                  <Globe className="w-4 h-4" />
+                  University BDT College of Engineering
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.aiet.org.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-2 text-gray-300 hover:text-white transition-colors text-sm"
+                >
+                  <Globe className="w-4 h-4" />
+                  Alva's Institute of Engineering & Technology
                 </a>
               </li>
             </ul>

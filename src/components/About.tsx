@@ -65,7 +65,7 @@ const About = () => {
               <Award className="w-8 h-8 text-white" />
             </div>
             <div className="text-4xl font-bold text-[#091F4E] mb-2">{counts.edition}th</div>
-            <div className="text-gray-600 font-medium">Edition</div>
+            <div className="text-gray-600 font-medium">International Engineering Symposium</div>
           </div>
 
           <div className="text-center p-6 bg-white rounded-xl shadow-lg hover:shadow-2xl transition-shadow duration-300">

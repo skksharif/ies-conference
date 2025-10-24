@@ -12,9 +12,9 @@ const CallForPapers = () => {
   ];
 
   const timeline = [
-    { date: 'October 31, 2025', event: 'Abstract Submission Deadline', color: 'from-[#E56B46] to-[#A23E3A]' },
-    { date: 'November 7, 2025', event: 'Acceptance Notification', color: 'from-[#091F4E] to-[#E56B46]' },
-    { date: 'December 15, 2025', event: 'Full Paper Submission', color: 'from-[#A23E3A] to-[#091F4E]' }
+    { date: 'October 31, 2025', event: 'Abstract Submission Deadline'},
+    { date: 'November 7, 2025', event: 'Acceptance Notification' },
+    { date: 'December 15, 2025', event: 'Full Paper Submission' }
   ];
 
   return (
@@ -31,8 +31,8 @@ const CallForPapers = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 mb-16">
-          <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl p-8">
+        <div className="grid md:grid-cols-2 gap-12 mb-16 items-center">
+          <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl p-8 h-fit">
             <div className="flex items-center gap-3 mb-6">
               <FileText className="w-8 h-8 text-[#E56B46]" />
               <h3 className="text-2xl font-bold text-[#091F4E]">Broad Areas of Interest</h3>
@@ -59,7 +59,7 @@ const CallForPapers = () => {
                     key={index}
                     className="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all duration-300"
                   >
-                    <div className={`text-lg font-bold bg-gradient-to-r ${item.color} bg-clip-text text-transparent mb-2`}>
+                    <div className={`text-lg font-bold bg-gradient-to-r from-[#E56B46] to-[#A23E3A] bg-clip-text text-transparent mb-2`}>
                       {item.date}
                     </div>
                     <div className="text-gray-200">{item.event}</div>
@@ -81,6 +81,9 @@ const CallForPapers = () => {
                 <div className="font-semibold">Email to:</div>
                 <a href="mailto:raju.aedla@vedic.edu.in" className="block hover:underline">
                   raju.aedla@vedic.edu.in
+                </a>
+                 <a href="mailto:katta@nitk.edu.in" className="block hover:underline">
+                 katta@nitk.edu.in
                 </a>
                 
               </div>
