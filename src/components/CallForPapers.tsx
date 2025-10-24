@@ -1,20 +1,20 @@
-import { FileText, Calendar, Mail, CheckCircle2 } from 'lucide-react';
+import { FileText, Calendar, Mail, CheckCircle2 } from "lucide-react";
 
 const CallForPapers = () => {
   const areas = [
-    'Mechanical Engineering, Materials, Metallurgical and Production Engineering',
-    'Civil Engineering, Architecture, Ocean Engineering, Earth Sciences',
-    'Electrical Engineering, Electronics, Communications Engineering',
-    'Computer Science & Engineering, Artificial Intelligence, Information Technology',
-    'Applied Chemistry, Chemical Engineering, Biotechnology',
-    'Engineering Physics, Engineering Mathematics and Computational Sciences',
-    'Health Sciences, Social Sciences and Management'
+    "Mechanical Engineering, Materials, Metallurgical and Production Engineering",
+    "Civil Engineering, Architecture, Ocean Engineering, Earth Sciences",
+    "Electrical Engineering, Electronics, Communications Engineering",
+    "Computer Science & Engineering, Artificial Intelligence, Information Technology",
+    "Applied Chemistry, Chemical Engineering, Biotechnology",
+    "Engineering Physics, Engineering Mathematics and Computational Sciences",
+    "Health Sciences, Social Sciences and Management",
   ];
 
   const timeline = [
-    { date: 'October 31, 2025', event: 'Abstract Submission Deadline'},
-    { date: 'November 7, 2025', event: 'Acceptance Notification' },
-    { date: 'December 15, 2025', event: 'Full Paper Submission' }
+    { date: "October 31, 2025", event: "Abstract Submission Deadline" },
+    { date: "November 7, 2025", event: "Acceptance Notification" },
+    { date: "December 15, 2025", event: "Full Paper Submission" },
   ];
 
   return (
@@ -26,8 +26,9 @@ const CallForPapers = () => {
           </h2>
           <div className="w-24 h-1 bg-gradient-to-r from-[#E56B46] to-[#A23E3A] mx-auto mb-8"></div>
           <p className="text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            The 10th International Engineering Symposium (IES 2026) invites contributions from researchers,
-            scientists, and academicians across diverse fields of engineering, technology, and applied sciences.
+            The 10th International Engineering Symposium (IES 2026) invites
+            contributions from researchers, scientists, and academicians across
+            diverse fields of engineering, technology, and applied sciences.
           </p>
         </div>
 
@@ -35,7 +36,9 @@ const CallForPapers = () => {
           <div className="bg-gradient-to-br from-gray-50 to-white rounded-2xl shadow-xl p-8 h-fit">
             <div className="flex items-center gap-3 mb-6">
               <FileText className="w-8 h-8 text-[#E56B46]" />
-              <h3 className="text-2xl font-bold text-[#091F4E]">Broad Areas of Interest</h3>
+              <h3 className="text-2xl font-bold text-[#091F4E]">
+                Broad Areas of Interest
+              </h3>
             </div>
             <ul className="space-y-4">
               {areas.map((area, index) => (
@@ -59,7 +62,9 @@ const CallForPapers = () => {
                     key={index}
                     className="bg-white/10 backdrop-blur-sm rounded-xl p-4 hover:bg-white/20 transition-all duration-300"
                   >
-                    <div className={`text-lg font-bold bg-gradient-to-r from-[#E56B46] to-[#A23E3A] bg-clip-text text-transparent mb-2`}>
+                    <div
+                      className={`text-lg font-bold bg-gradient-to-r from-[#E56B46] to-[#A23E3A] bg-clip-text text-transparent mb-2`}
+                    >
                       {item.date}
                     </div>
                     <div className="text-gray-200">{item.event}</div>
@@ -74,21 +79,27 @@ const CallForPapers = () => {
                 <h3 className="text-2xl font-bold">Submission Information</h3>
               </div>
               <p className="mb-4 leading-relaxed">
-                Submit abstracts (100-150 words) including paper title, authors' names, designations,
-                affiliations, and contact information.
+                Submit abstracts (100-150 words) including paper title, authors'
+                names, designations, affiliations, and contact information.
               </p>
               <div className="bg-white/20 backdrop-blur-sm rounded-lg p-4 space-y-2">
                 <div className="font-semibold">Email to:</div>
-                <a href="mailto:raju.aedla@vedic.edu.in" className="block hover:underline">
+                <a
+                  href="mailto:katta@nitk.edu.in"
+                  className="block hover:underline"
+                >
+                  katta@nitk.edu.in
+                </a>
+                <a
+                  href="mailto:raju.aedla@vedic.edu.in"
+                  className="block hover:underline"
+                >
                   raju.aedla@vedic.edu.in
                 </a>
-                 <a href="mailto:katta@nitk.edu.in" className="block hover:underline">
-                 katta@nitk.edu.in
-                </a>
-                
               </div>
               <p className="mt-4 text-sm opacity-90">
-                All papers will be peer-reviewed and published in the Symposium Proceedings.
+                All papers will be peer-reviewed and published in the Symposium
+                Proceedings.
               </p>
             </div>
           </div>

@@ -14,7 +14,7 @@ const About = () => {
           animateCounters();
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0 }
     );
 
     if (sectionRef.current) {

@@ -64,17 +64,16 @@ const Footer = () => {
                 <Mail className="w-5 h-5 flex-shrink-0 mt-1 text-[#E56B46]" />
                 <div>
                   <a
-                    href="mailto:torii@kurume-it.ac.jp"
-                    className="text-gray-300 hover:text-white transition-colors text-sm"
-                  >
-                    torii@kurume-it.ac.jp
-                  </a>
-                  <br />
-                  <a
                     href="mailto:katta@nitk.edu.in"
-                    className="text-gray-300 hover:text-white transition-colors text-sm"
+                    className="block hover:underline"
                   >
                     katta@nitk.edu.in
+                  </a>
+                  <a
+                    href="mailto:raju.aedla@vedic.edu.in"
+                    className="block hover:underline"
+                  >
+                    raju.aedla@vedic.edu.in
                   </a>
                 </div>
               </li>
